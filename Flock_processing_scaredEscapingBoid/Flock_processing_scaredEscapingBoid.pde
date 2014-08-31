@@ -30,7 +30,7 @@ float predatorInfluenceRadius = 600;
 float predatorStartX = screenW-predatorSize; 
 float predatorStartY = predatorSize;
 
-int numBoids =  250;                 // orig 150
+int numBoids =  500;                 // orig 150
 float boidRadius = 2.0;                  // orig 2.0
 int boidStartX = 500;//int(predatorStartX - predatorInfluenceRadius/2 -50);//50; 
 int boidStartY = screenH/4;            // orig 50
@@ -57,7 +57,7 @@ void setup() {
   size(screenW, screenH);
   predator = new Predator(predatorStartX, predatorStartY);
   
-  log = new Log("ejemplo_"+numBoids+".txt");
+  log = new Log("../Flock_Data/FlockData_"+numBoids+".txt");
   log.write("Iteracion;nBoids;Boid;Location X;Location Y;Velocity X; Velocity Y;Acceleration X; Acceleration Y"+"\n");
   
   ///*
